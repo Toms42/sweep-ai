@@ -15,8 +15,8 @@ public class ImagePanel extends JPanel{
 	
 	public ImagePanel() {
 		try{
-			image = ImageIO.read(new File("resources/mineAI.png"));
-		} catch(IOException ex) {}
+			image = ImageIO.read(getClass().getResource("/mineAI.png"));
+		} catch(IOException ex) {ex.printStackTrace();}
 	}
 	
 	@Override
