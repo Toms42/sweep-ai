@@ -1,0 +1,19 @@
+### Sets default
+* text=auto
+
+### Sets text files
+## Git files
+.gitignore text
+.gitattributes text
+## Java
+*.java text
+## Config
+.settings/org.eclipse.jdt.core.prefs text
+.classpath text
+.project text
+
+### Sets binaries
+## Graphics
+*.png binary
+## Java
+*.jar binary
