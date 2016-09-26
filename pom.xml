@@ -59,19 +59,26 @@
                <mainClass>minesweeper.MineStarter</mainClass>
             </configuration>
          </plugin>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <version>3.0.2</version>
+        <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.4.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
             <configuration>
-               <archive>
-                  <manifest>
-                     <addClasspath>true</addClasspath>
-                     <mainClass>minesweeper.MineStarter</mainClass>
-                  </manifest>
-               </archive>
+              <transformers>
+                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>minesweeper.MineStarter</mainClass>
+                </transformer>
+              </transformers>
             </configuration>
-         </plugin>
+          </execution>
+        </executions>
+      </plugin>
       </plugins>
    </build>
 </project>
