@@ -15,7 +15,7 @@ To use from the command line issue the following
 ```
 set JAVA_HOME=<JDK HOME DIRECTORY>
 mvnw exec:java
-``
+```
 
 *Linux*
 ```
