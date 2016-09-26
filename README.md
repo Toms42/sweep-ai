@@ -6,7 +6,7 @@ Unfortunately, because the AI relies on using screenshots and having constant wi
 [More Info](http://tomscherlis.com/otw-portfolio/minesweeper-ai/)
 Author: [Tom Scherlis](http://tomscherlis.com/)
 
-## Updates
+## Update 1
 This has been updated to include the use of [Maven](https://maven.apache.org/) and has an embedded wrapper command.
 
 To use from the command line issue the following
@@ -21,4 +21,12 @@ mvnw exec:java
 ```
 export JAVA_HOME=<JDK HOME DIRECTORY>
 mvnw exec:java
+```
+
+## Update 2
+You can import this project in Eclipse IDE and it generate the necessary files.
+Or if you want you can use the following command
+
+```
+mvnw eclipse:eclipse
 ```
