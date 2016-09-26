@@ -21,4 +21,4 @@ mvnw exec:java
 ```
 export JAVA_HOME=<JDK HOME DIRECTORY>
 mvnw exec:java
-``
+```
